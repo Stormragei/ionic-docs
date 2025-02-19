@@ -9,10 +9,10 @@ import { renderMarkdown } from './utils.mjs';
 const __dirname = new URL('.', import.meta.url).pathname;
 const OUTPUT_PATH = resolve(__dirname, '../src/components/page/reference/ReleaseNotes/release-notes.json');
 
-// export default {
-//   title: 'Build Release Notes data',
-//   task: async () => outputJson(OUTPUT_PATH, await getReleases(), { spaces: 2 })
-// };
+export default {
+   title: 'Build Release Notes data',
+  task: async () => outputJson(OUTPUT_PATH, await getReleases(), { spaces: 2 })
+};
 
 // Get the GitHub Releases from Ionic
 // -------------------------------------------------------------------------------
@@ -22,6 +22,9 @@ const OUTPUT_PATH = resolve(__dirname, '../src/components/page/reference/Release
 // https://docs.github.com/en/enterprise-cloud@latest/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 // and then authorize it to work with SSO:
 // https://docs.github.com/en/enterprise-cloud@latest/authentication/authenticating-with-saml-single-sign-on/authorizing-a-personal-access-token-for-use-with-saml-single-sign-on
+
+
+
 const getReleases = async () => {
   try {
     const request = await fetch(new URL('repos/ionic-team/ionic/releases', 'https://api.github.com'), {
