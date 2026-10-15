@@ -37,10 +37,10 @@
     ]
   },
   "dependencies": {
-    "@docusaurus/core": "^3.0.0",
+    "@docusaurus/core": "^3.10.2",
     "@docusaurus/mdx-loader": "^3.0.0",
-    "@docusaurus/plugin-client-redirects": "^3.0.0",
-    "@docusaurus/preset-classic": "^3.0.0",
+    "@docusaurus/plugin-client-redirects": "^3.10.2",
+    "@docusaurus/preset-classic": "^3.10.2",
     "@ionic-internal/ionic-ds": "^7.0.0",
     "@mdx-js/react": "^3.0.0",
     "@prismicio/client": "^6.4.2",
